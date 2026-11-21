@@ -1,0 +1,32 @@
+CRLOMTL:
+  MODE: alternating_with_interm
+  RESOLVER: shared_subspace
+DATA:
+  DATASET: PASCALContext
+  DATA_PATH: dataset/PASCAL_MT/
+  IMG_SIZE: 448
+LORA:
+  ALPHA: 16
+  ENABLED: true
+  RANK: 8
+METHOD: crlomtl
+MODEL:
+  DROP_PATH_RATE: 0.2
+  NAME: swin_tiny_patch4_window7_224
+  SWIN:
+    DEPTHS:
+      - 2
+      - 2
+      - 6
+      - 2
+    EMBED_DIM: 96
+    NUM_HEADS:
+      - 3
+      - 6
+      - 12
+      - 24
+    WINDOW_SIZE: 7
+  TYPE: swin
+TRAIN:
+  # the published CRLoMTL results were trained for 350 epochs
+  EPOCHS: 350

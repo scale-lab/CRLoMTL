@@ -1,0 +1,29 @@
+METHOD: multi
+
+TASKS: null
+
+MODEL:
+  TYPE: swin_celeba
+  NAME: swin_tiny_patch4_window7_224_celeba_smiling
+  DROP_PATH_RATE: 0.2
+
+  SWIN:
+    EMBED_DIM: 96
+    DEPTHS: [2, 2, 6, 2]
+    NUM_HEADS: [3, 6, 12, 24]
+    WINDOW_SIZE: 7
+
+  CELEBA:
+    HEAD_DROPOUT: 0.0
+    USE_GROUPED_LORA: False
+
+DATA:
+  DATASET: CelebA
+  DATA_PATH: celeba_data/celeba
+  IMG_SIZE: 224
+  BATCH_SIZE: 32
+  EVAL_BATCH_SIZE: 128
+
+TRAIN:
+  EPOCHS: 15
+  WARMUP_EPOCHS: 1
