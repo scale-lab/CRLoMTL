@@ -4,7 +4,7 @@ import torch
 from tqdm import tqdm
 
 from analysis_utils import unpack_batch
-from cwd import CriterionCWD
+from methods.cwd import CriterionCWD
 from gradient_conflict import (
     compute_conflict_lambdas,
     calculate_tasks_gradient,

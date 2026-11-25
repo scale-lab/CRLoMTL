@@ -231,7 +231,7 @@ Some files are based on code from the following repositories and keep their orig
 - `methods/weight_methods.py`: [FAMO](https://github.com/Cranial-XIX/FAMO) and [MTLlib](https://github.com/jianke0604/MTLlib) (FairGrad, PIVRG, ConsMTL, GO4ALIGN)
 - `methods/cluster_methods.py`: [MTLlib](https://github.com/jianke0604/MTLlib) and [GO4Align](https://github.com/autumn9999/GO4Align)
 - `methods/min_norm_solvers.py`: [MultiObjectiveOptimization](https://github.com/isl-org/MultiObjectiveOptimization)
-- `cwd.py`: [TorchDistiller](https://github.com/irfanICMLL/TorchDistiller)
+- `methods/cwd.py`: [TorchDistiller](https://github.com/irfanICMLL/TorchDistiller)
 
 ## License
 
